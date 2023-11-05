@@ -19,8 +19,15 @@ function MyButton() {
   )
 }
 
+function handleClick() {
+  return (
+    alert (date().toLocaleString)
+  )
+}
+
 export default function Square() {
   return (
+
     <>
       <div>
         <h1>Class </h1>
@@ -30,7 +37,7 @@ export default function Square() {
       <InsertBreak />
 
       <div className="board-row">
-        <button className="square">1</button>
+        <button onClick={handleClick()} className="square">1</button>
         <button className="square">2</button>
         <button className="square">3</button>
       </div>
